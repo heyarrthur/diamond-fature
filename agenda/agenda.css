@@ -109,17 +109,39 @@ button:hover {
 }
 
 .tarefas-do-dia {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
     margin-top: 20px;
 }
 
 .tarefas-do-dia h3 {
-    color: #4caf50;
+    color: #333;
     margin-bottom: 10px;
 }
 
 .tarefas-do-dia p {
     margin: 5px 0;
-    color: #333;
+    color: #666;
+}
+
+.tarefas-do-dia-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.tarefas-do-dia-container.show {
+    display: block;
 }
 
 /* Media query for smaller screens */
