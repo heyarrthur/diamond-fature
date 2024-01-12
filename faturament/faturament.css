@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.material-icons {
+    font-size: 24px;
+    margin-bottom: 5px; /* Adicionado espaçamento entre o ícone e o texto */
+}
+
+.main-container {
+    margin-left: 20px; /* Alterado para uma unidade relativa, pode ser ajustado conforme necessário */
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.extrato-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.entry {
+    color: green;
+}
+
+.exit {
+    color: red;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        margin-bottom: 10px; /* Adicionado espaçamento entre os itens da navbar */
+    }
+
+    .material-icons {
+        margin-bottom: 0; /* Removido espaçamento entre o ícone e o texto em telas menores */
+    }
+
+    .main-container {
+        margin-left: 10px; /* Alterado para uma unidade relativa menor */
+    }
+
+    .form-container,
+    .extrato-container {
+        margin-left: 10px; /* Ajuste da margem para melhorar a aparência em telas menores */
+        margin-right: 10px; /* Ajuste da margem para melhorar a aparência em telas menores */
+    }
+}

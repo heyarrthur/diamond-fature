@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="agenda.css">
+    <title>Minha Agenda</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="/faturament/faturament.html" class="nav-item"><i class="material-icons">home</i> Início</a>
+        <a href="agenda.html" class="nav-item"><i class="material-icons">search</i> Agenda</a>
+        <a href="#" class="nav-item"><i class="material-icons">person</i> Perfil</a>
+    </div>
+
+    <div class="agenda">
+        <h1>Minha Agenda</h1>
+
+        <div id="selecao-mes">
+            <label for="mes">Escolha o mês:</label>
+            <select id="mes" onchange="atualizarCalendario()">
+                <option value="0">Janeiro</option>
+                <option value="1">Fevereiro</option>
+                <option value="2">Março</option>
+                <option value="3">Abril</option>
+                <option value="4">Maio</option>
+                <option value="5">Junho</option>
+                <option value="6">Julho</option>
+                <option value="7">Agosto</option>
+                <option value="8">Setembro</option>
+                <option value="9">Outubro</option>
+                <option value="10">Novembro</option>
+                <option value="11">Dezembro</option>
+            </select>
+        </div>
+
+        <div id="calendario" class="calendario">
+            <!-- Os dias do mês serão exibidos aqui -->
+        </div>
+
+        <div class="adicionar-evento">
+            <h2>Adicionar Tarefa</h2>
+            <form id="formulario">
+                <label for="titulo">Tarefa:</label>
+                <input type="text" id="titulo" required>
+
+                <label for="horario">Horário:</label>
+                <input type="text" id="horario" required placeholder="Ex: 14:30">
+
+                <button type="button" onclick="adicionarTarefa()">Adicionar</button>
+            </form>
+        </div>
+
+        <div id="tarefas-do-dia" class="tarefas-do-dia">
+            <!-- As tarefas do dia selecionado serão exibidas aqui -->
+        </div>
+    </div>
+
+    <script src="agenda.js"></script>
+</body>
+</html>
