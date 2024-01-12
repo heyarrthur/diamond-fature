@@ -13,7 +13,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
 }
 
 .nav-item {
@@ -125,7 +124,6 @@ button:hover {
 /* Media query for smaller screens */
 @media only screen and (max-width: 600px) {
     .navbar {
-        flex-direction: column;
         align-items: flex-start;
     }
 }
